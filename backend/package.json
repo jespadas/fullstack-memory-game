@@ -1,0 +1,41 @@
+{
+    "name": "memorygame",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Julio Espadas <contact@julioespadas.com>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jespadas/memorygame.git"
+    },
+    "bugs": "http://github.com/jespadas/memorygame/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {
+        "body-parser": "^1.15.0",
+        "express": ">=4.17.1",
+        "swaggerize-express": "^4.0.0",
+        "swaggerize-ui": ">=3.18.0",
+        "swagmock": "~0.0.2"
+    },
+    "devDependencies": {
+        "eslint": ">=4.18.2",
+        "tape": "^4",
+        "istanbul": "~0.4.3",
+        "is-my-json-valid": "^2.13.1",
+        "js-yaml": "^3.2.6",
+        "supertest": "^1.2.0",
+        "swagger-parser": "^3.4.1"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.js'",
+        "cover": "istanbul cover tape -- 'tests/**/*.js'",
+        "lint": "eslint .",
+        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
+    },
+    "generator-swaggerize": {
+        "version": "4.1.0"
+    },
+    "main": "./server"
+}
