@@ -16,6 +16,9 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "cypress": "^3.3.2"
+    "acorn": ">=5.7.4",
+    "cypress": "^4.4.0",
+    "kind-of": ">=6.0.3",
+    "minimist": ">=1.2.3"
   }
 }
