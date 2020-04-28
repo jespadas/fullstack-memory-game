@@ -29,14 +29,15 @@
         "minimist": ">=1.2.3",
         "supertest": "^4.0.2",
         "swagger-parser": "^3.4.1",
-        "tape": "^4"
+        "tape": "^4",
+        "handlebars": ">=4.3.0",
+        "hoek": "> 4.2.0 < 5.0.0 || >= 5.0.3"
     },
     "scripts": {
         "test": "tape 'tests/**/*.js'",
         "cover": "istanbul cover tape -- 'tests/**/*.js'",
         "lint": "eslint .",
-        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'",
-        "handlebars": ">=4.3.0"
+        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
     },
     "generator-swaggerize": {
         "version": "4.1.0"
