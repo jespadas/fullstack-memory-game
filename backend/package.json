@@ -17,7 +17,9 @@
         "express": ">=4.17.1",
         "swaggerize-express": "^4.0.0",
         "swagger-ui": ">=3.23.11",
-        "swagmock": "~0.0.2"
+        "swagmock": "~0.0.2",
+        "glob-parent": ">=5.1.2"
+}
     },
     "devDependencies": {
         "acorn": "^7.1.1",
